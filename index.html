@@ -3,93 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Homepage</title>
+    <title>Organik SEO</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            background-color: #001f3f; /* Deep Navy */
-        }
-        h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .hero {
-            background: url('hero-background.jpg') center/cover;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            color: #39FF14; /* Vibrant Green */
-        }
-        .section {
-            padding: 50px 0;
-        }
-        .services, .testimonials {
-            background-color: #003366;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        .cta {
-            background-color: #39FF14;
-            color: #001f3f;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; color: #333; }
+        .navbar { display: flex; justify-content: space-between; padding: 15px 30px; background: #001f3f; color: white; }
+        .navbar img { height: 40px; }
+        .menu { display: flex; gap: 20px; }
+        .button { background: orange; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        .hero { display: flex; justify-content: space-between; padding: 50px; background: #f3f4f6; }
+        .headline { font-size: 2.5em; margin-bottom: 20px; }
+        .highlight { color: orange; }
+        .cta { display: flex; gap: 10px; }
+        .trusted { padding: 30px; text-align: center; background: #ffffff; }
+        .service-section { padding: 60px; background: #e9ecef; }
+        .footer { background: #001f3f; color: white; padding: 20px; text-align: center; }
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
+            .hero { flex-direction: column; }
+            .navbar, .cta { flex-direction: column; }
         }
     </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1>Welcome to Organik SEO</h1>
-            <p>Your Partner in AI + SEO Positioning</p>
+    <header class="navbar">
+        <div><a href="#" style="color: white;">Back to Sites</a></div>
+        <img src="logo.png" alt="Organik SEO Logo">
+        <div class="menu">
+            <a href="#">Approach</a>
+            <a href="#">Solutions</a>
+            <a href="#">Partners</a>
+            <button class="button">Schedule Strategy Call</button>
         </div>
     </header>
-    <main class="container">
-        <section class="services">
-            <h2>Our Services</h2>
-            <p>We offer a range of services to boost your online presence with AI-driven strategies.</p>
-            <ul>
-                <li>SEO Audits</li>
-                <li>Content Strategy</li>
-                <li>Technical SEO</li>
-            </ul>
-        </section>
-        <section class="ideal-client">
-            <h2>Ideal Client Profile</h2>
-            <p>We work best with clients who are ready to invest in their digital future.</p>
-        </section>
-        <section class="partnership">
-            <h2>Partnership Model</h2>
-            <p>Collaborate with us for a shared vision and mutual growth.</p>
-        </section>
-        <section class="testimonials">
-            <h2>Testimonials</h2>
-            <p>&quot;Organik SEO has transformed our business!&quot; - Happy Client</p>
-        </section>
-        <div class="cta">Get Started Today!</div>
-    </main>
-    <footer>
+    <section class="hero">
+        <div>
+            <h1 class="headline">Master the shift to <span class="highlight">AI-first</span> search</h1>
+            <p>Unlock the power of artificial intelligence to enhance your search visibility.</p>
+            <div class="cta">
+                <button class="button">Schedule Strategy Call</button>
+                <button class="button">Our Methodology</button>
+            </div>
+        </div>
+        <img src="3d-illustration.png" alt="3D Illustration" style="max-width: 300px;">
+    </section>
+    <section class="trusted">
+        <h2>Trusted by</h2>
+        <div class="logo-container">
+            <img src="logo1.png" alt="Company Logo 1">
+            <img src="logo2.png" alt="Company Logo 2">
+            <img src="logo3.png" alt="Company Logo 3">
+        </div>
+    </section>
+    <section class="service-section">
+        <h2>Strategic visibility for a new era</h2>
+        <div class="pillars">
+            <div>
+                <h3>Semantic Authority</h3>
+                <p>Building comprehensive knowledge around topics.</p>
+            </div>
+            <div>
+                <h3>Intent Alignment</h3>
+                <p>Meeting user needs with precision.</p>
+            </div>
+            <div>
+                <h3>AI Discoverability</h3>
+                <p>Utilizing AI tools for enhanced visibility.</p>
+            </div>
+        </div>
+    </section>
+    <section style="background: darkgreen; color: white; padding: 30px;">
+        <h2>Trusted strategic partners, proven results</h2>
+        <p>Our partner network model delivers sustained value.</p>
+        <ul>
+            <li>Expert guidance in your corner.</li>
+            <li>Collaborative strategies tailored to you.</li>
+            <li>Dedicated support every step of the way.</li>
+        </ul>
+        <button class="button">Learn More</button>
+    </section>
+    <section class="cta">
+        <h2>Ready to evolve?</h2>
+        <input type="email" placeholder="Enter your email" />
+        <button class="button">Get Started</button>
+    </section>
+    <footer class="footer">
         <p>&copy; 2026 Organik SEO. All rights reserved.</p>
+        <a href="#" style="color: white;">Privacy Policy</a> | 
+        <a href="#" style="color: white;">Terms of Service</a>
     </footer>
 </body>
 </html>
