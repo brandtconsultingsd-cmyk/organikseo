@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - OrganikSEO</title>
+    <title>Modern Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #001f3f; /* Deep Navy */
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: url('hero-background.jpg') center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #39FF14; /* Vibrant Green */
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .services, .testimonials {
+            background-color: #003366;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .cta {
+            background-color: #39FF14;
+            color: #001f3f;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to OrganikSEO</h1>
-    <p>Your one-stop solution for organic search engine optimization.</p>
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to Organik SEO</h1>
+            <p>Your Partner in AI + SEO Positioning</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>We offer a range of services to boost your online presence with AI-driven strategies.</p>
+            <ul>
+                <li>SEO Audits</li>
+                <li>Content Strategy</li>
+                <li>Technical SEO</li>
+            </ul>
+        </section>
+        <section class="ideal-client">
+            <h2>Ideal Client Profile</h2>
+            <p>We work best with clients who are ready to invest in their digital future.</p>
+        </section>
+        <section class="partnership">
+            <h2>Partnership Model</h2>
+            <p>Collaborate with us for a shared vision and mutual growth.</p>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <p>&quot;Organik SEO has transformed our business!&quot; - Happy Client</p>
+        </section>
+        <div class="cta">Get Started Today!</div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Organik SEO. All rights reserved.</p>
+    </footer>
 </body>
 </html>
