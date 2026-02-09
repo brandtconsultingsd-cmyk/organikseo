@@ -3,58 +3,668 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Organik SEO</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Master the shift to AI-first search. Organik SEO helps forward-thinking brands maintain visibility as search evolves.">
+    <title>Organik SEO - Master AI-First Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .nav-left a {
+            color: #6b7280;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .logo span {
+            color: #f59e0b;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-center a {
+            text-decoration: none;
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-center a:hover {
+            color: #1f2937;
+        }
+
+        .nav-cta {
+            background: #1f2937;
+            color: white;
+            padding: 0.625rem 1.25rem;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: #111827;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .hero-content h1 .highlight {
+            color: #f59e0b;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background: #1f2937;
+            color: white;
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #111827;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #1f2937;
+            padding: 0.875rem 1.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            border-color: #1f2937;
+            background: #f9fafb;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 550px;
+            height: 380px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            border-radius: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Trusted By Section */
+        .trusted-section {
+            background: #ffffff;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .trusted-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .trusted-logos {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .trusted-logo {
+            font-weight: 600;
+            color: #9ca3af;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* Strategic Visibility Section */
+        .visibility-section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .visibility-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .visibility-header h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .visibility-header p {
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.95rem;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar {
+            padding: 2.5rem;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.75rem;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .pillar:hover {
+            border-color: #f59e0b;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+        }
+
+        .pillar-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .pillar h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+
+        .pillar p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Partners Section */
+        .partners-section {
+            background: #1f3a3f;
+            color: white;
+            padding: 5rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .partners-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .partners-content h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .partners-content h2 .highlight {
+            color: #f59e0b;
+        }
+
+        .partners-content p {
+            color: #d1d5db;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .partners-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .partners-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        .partners-list li:before {
+            content: "●";
+            color: #f59e0b;
+            font-size: 1.5rem;
+        }
+
+        .btn-partners {
+            background: #f59e0b;
+            color: #1f2937;
+        }
+
+        .btn-partners:hover {
+            background: #d97706;
+        }
+
+        .partners-image {
+            background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+            border-radius: 1rem;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .cta-section p {
+            color: #6b7280;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .email-form input {
+            padding: 0.875rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+
+        .email-form input:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .form-message {
+            font-size: 0.85rem;
+            color: #10b981;
+            text-align: center;
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .form-message.show {
+            display: block;
+        }
+
+        .response-time {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 2rem;
+            border-top: 1px solid #374151;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .footer-logo span {
+            color: #f59e0b;
+        }
+
+        .footer-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #f59e0b;
+        }
+
+        .footer-copyright {
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .partners-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-right {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-center {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <section class="hero">
-            <h1>Welcome to Organik SEO</h1>
-            <p>Your partner in elevating your online presence!</p>
-            <button>Get Started</button>
-        </section>
-    </header>
-    <main>
-        <section class="trusted-partners">
-            <h2>Trusted by Leading Brands</h2>
-            <div class="logos">
-                <img src="partner1.png" alt="Partner 1">
-                <img src="partner2.png" alt="Partner 2">
-                <img src="partner3.png" alt="Partner 3">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <a href="#">← Back to Sites</a>
+            <div class="logo">Organik <span>SEO</span></div>
+        </div>
+        <div class="nav-center">
+            <a href="#approach">Approach</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#partners">Partners</a>
+        </div>
+        <button class="nav-cta">Strategy Call</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master the shift to <span class="highlight">AI-first</span> search.</h1>
+            <p>Traditional SEO is changing. We help forward-thinking brands maintain visibility as search evolves from keywords and links to LLMs, agents, and semantic discovery.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Schedule Strategy Call →</button>
+                <button class="btn-secondary">Our Methodology</button>
             </div>
-        </section>
-        <section class="three-pillars">
-            <h2>Our Three Pillars</h2>
+        </div>
+        <div class="hero-image">
+            3D AI-Powered Search Visualization
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="trusted-section">
+        <div class="trusted-label">Trusted by industry leaders in SaaS & Tech</div>
+        <div class="trusted-logos">
+            <div class="trusted-logo">ACME</div>
+            <div class="trusted-logo">GLOBAL</div>
+            <div class="trusted-logo">VERTEX</div>
+            <div class="trusted-logo">PRISM</div>
+            <div class="trusted-logo">QUANTUM</div>
+        </div>
+    </section>
+
+    <!-- Strategic Visibility Section -->
+    <section class="visibility-section" id="approach">
+        <div class="visibility-header">
+            <h2>Strategic visibility for a new era</h2>
+            <p>The goal hasn't changed, but the battlefield has. We focus on the three pillars of modern search authority.</p>
+        </div>
+        <div class="pillars">
             <div class="pillar">
-                <h3>Transparency</h3>
-                <p>We believe in clear communication.</p>
+                <div class="pillar-icon">ⓘ</div>
+                <h3>Semantic Authority</h3>
+                <p>Optimize content for entity relationships and context, ensuring LLMs understand your brand as a topical authority.</p>
             </div>
             <div class="pillar">
-                <h3>Results-Driven</h3>
-                <p>Your success is our priority.</p>
+                <div class="pillar-icon">⭕</div>
+                <h3>Intent Alignment</h3>
+                <p>Be present where decisions are made—from traditional search results to ChatGPT recommendations and Perplexity citations.</p>
             </div>
             <div class="pillar">
-                <h3>Supportive</h3>
-                <p>We're here for you every step of the way.</p>
+                <div class="pillar-icon">⚡</div>
+                <h3>AI Discoverability</h3>
+                <p>Stay ahead of the curve with strategies designed for agentic search tools and automated research environments.</p>
             </div>
-        </section>
-        <section class="strategic-partners">
-            <h2>Strategic Partnerships</h2>
-            <p>Working with the best for the best.</p>
-            <div class="partners">
-                <img src="strategic-partner1.png" alt="Strategic Partner 1">
-                <img src="strategic-partner2.png" alt="Strategic Partner 2">
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section" id="partners">
+        <div class="partners-container">
+            <div class="partners-content">
+                <h2>Trusted strategic partners,<br><span class="highlight">proven results.</span></h2>
+                <p>Organik SEO isn't just one person—it's an elite network. We match your specific goals with vetted partners who specialize in your industry and the latest AI-driven tactics.</p>
+                <ul class="partners-list">
+                    <li>Personally vetted specialist matching</li>
+                    <li>Bespoke strategy development</li>
+                    <li>Ongoing quality & performance oversight</li>
+                </ul>
+                <button class="btn-primary btn-partners">Discover Your Project →</button>
             </div>
-        </section>
-        <section class="email-cta">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest insights!</p>
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe</button>
-        </section>
-    </main>
+            <div class="partners-image">
+                Expert Network in Action
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta-section">
+        <h2>Ready to evolve?</h2>
+        <p>Let's have a conversation about your current visibility and where the market is headed. No generic pitches—just strategy.</p>
+        <form class="email-form" id="cta-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn-primary">Get Started</button>
+        </form>
+        <div class="form-message" id="form-message">✓ Thanks! We'll be in touch at julien@organikseo.com within 24 hours.</div>
+        <p class="response-time">Typical response time • 24 hours</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Organik SEO. All Rights Reserved.</p>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">Organik <span>SEO</span></div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#approach">Approach</a>
+                    <a href="#solutions">Solutions</a>
+                    <a href="#partners">Partners</a>
+                    <a href="mailto:julien@organikseo.com">Contact</a>
+                </div>
+                <div class="footer-copyright">© 2026 Organik SEO. All rights reserved.</div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Handle email form submission
+        const form = document.getElementById('cta-form');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+
+            // Show success message
+            this.style.display = 'none';
+            formMessage.classList.add('show');
+
+            // Log for debugging
+            console.log('Email captured:', email);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
