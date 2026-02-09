@@ -1,61 +1,61 @@
 .navbar {
-  background-color: #1f2937;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
 }
 
 .navbar a {
-  color: #f59e0b;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .hero {
-  background-color: #1f2937;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+    background: url('path/to/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }
 
-.partners {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 20px;
+.three-pillars {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
 }
 
 .pillar {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.strategic-partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
 }
 
 .email-cta {
-  background-color: #f59e0b;
-  color: white;
-  text-align: center;
-  padding: 30px 0;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
 }
 
 .footer {
-  background-color: #1f2937;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .partners {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 769px) {
-  .partners {
-    flex-direction: row;
-  }
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
 }
