@@ -3,69 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organik SEO - Home</title>
+    <title>Organik SEO</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #fff; }
-        nav { display: flex; gap: 20px; }
-        h1 { font-size: 2.5em; text-align: center; margin-top: 50px; }
-        .cta { background-color: #2e7d32; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
-        .hero { text-align: center; padding: 50px; background-color: #f0f0f0; }
-        .partners, .pillars { padding: 50px; text-align: center; }
-        .strategic-partners { background-color: #004d00; color: #fff; padding: 50px; }
-        footer { text-align: center; padding: 20px; background-color: #222; color: #fff; }
-        form { margin-top: 20px; }
+        header { background-color: #001f3f; padding: 20px; color: #FFD700; display: flex; justify-content: space-between; align-items: center; }
+        header a { color: #FFD700; text-decoration: none; }
+        .hero { background-color: #001f3f; color: white; text-align: center; padding: 50px 20px; }
+        .hero h1 { color: #FFD700; }
+        .partners, .pillars, .strategic-partners { padding: 20px; }
+        .trusted-partners img { max-width: 100px; margin: 10px; }
+        .pillars { display: flex; justify-content: space-around; }
+        .pillar { padding: 20px; width: 30%; text-align: center; }
+        footer { background-color: #001f3f; color: white; text-align: center; padding: 10px; }
+        .email-capture { display: flex; justify-content: center; margin-top: 20px; }
         input[type="email"] { padding: 10px; width: 300px; }
-        input[type="submit"] { padding: 10px; background-color: #2e7d32; color: #fff; border: none; }
-        @media (max-width: 600px) { h1 { font-size: 1.5em; } }
+        input[type="submit"] { padding: 10px; background-color: #FFD700; border: none; color: #001f3f; cursor: pointer; }
     </style>
 </head>
 <body>
     <header>
-        <div><a href="/">← Back to Sites</a></div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="cta">Get Started</button>
-        </nav>
+        <a href="#">← Back to Sites</a>
+        <h1>Organik SEO</h1>
     </header>
     <section class="hero">
         <h1>Master the shift to AI-first search</h1>
     </section>
-    <section class="partners">
+    <section class="partners trusted-partners">
         <h2>Trusted Partners</h2>
-        <p>[Insert Partner Logos Here]</p>
+        <img src="logo1.png" alt="Logo 1">
+        <img src="logo2.png" alt="Logo 2">
+        <img src="logo3.png" alt="Logo 3">
     </section>
     <section class="pillars">
-        <h2>Our Three Pillars</h2>
-        <div>
-            <h3>Semantic Authority</h3>
-            <p>Content that speaks to the needs of users.</p>
-        </div>
-        <div>
-            <h3>Intent Alignment</h3>
-            <p>Understanding what the user truly wants.</p>
-        </div>
-        <div>
-            <h3>AI Discoverability</h3>
-            <p>Leveraging AI for enhanced visibility.</p>
-        </div>
+        <h2>The Three Pillars</h2>
+        <div class="pillar">Semantic Authority</div>
+        <div class="pillar">Intent Alignment</div>
+        <div class="pillar">AI Discoverability</div>
     </section>
-    <section class="strategic-partners">
+    <section class="strategic-partners" style="background-color: #004d00;">
         <h2>Strategic Partners</h2>
-        <p>[Insert Strategic Partner Logos Here]</p>
+        <img src="partner1.png" alt="Partner 1">
+        <img src="partner2.png" alt="Partner 2">
     </section>
-    <section class="email-capture">
-        <h2>Join Our Newsletter</h2>
-        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-            <input type="email" placeholder="Enter your email" required />
-            <input type="submit" value="Subscribe" />
-        </form>
-    </section>
+    <div class="email-capture">
+        <input type="email" placeholder="Your email address" required>
+        <input type="submit" value="Subscribe">
+    </div>
     <footer>
-        <p>Contact: <a href="mailto:julien@organikseo.com">julien@organikseo.com</a></p>
+        <p>© 2026 Organik SEO. All rights reserved.</p>
     </footer>
 </body>
 </html>
