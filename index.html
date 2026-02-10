@@ -3,53 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organik SEO</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #001f3f; padding: 20px; color: #FFD700; display: flex; justify-content: space-between; align-items: center; }
-        header a { color: #FFD700; text-decoration: none; }
-        .hero { background-color: #001f3f; color: white; text-align: center; padding: 50px 20px; }
-        .hero h1 { color: #FFD700; }
-        .partners, .pillars, .strategic-partners { padding: 20px; }
-        .trusted-partners img { max-width: 100px; margin: 10px; }
-        .pillars { display: flex; justify-content: space-around; }
-        .pillar { padding: 20px; width: 30%; text-align: center; }
-        footer { background-color: #001f3f; color: white; text-align: center; padding: 10px; }
-        .email-capture { display: flex; justify-content: center; margin-top: 20px; }
-        input[type="email"] { padding: 10px; width: 300px; }
-        input[type="submit"] { padding: 10px; background-color: #FFD700; border: none; color: #001f3f; cursor: pointer; }
-    </style>
+    <title>Organik SEO - Master AI-First Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Organik SEO</h1>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="back-link">← Back to Sites</a>
+            <div class="logo">
+                <span class="logo-text">Organik <span class="logo-accent">SEO</span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#approach">Approach</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#partners">Partners</a>
+                <a href="#contact" class="cta-button">Strategy Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Master the shift to <span class="highlight">AI-first</span> search</h1>
+            <p class="hero-subtitle">Search is evolving beyond keywords. Success now demands semantic authority, intent alignment, and AI discoverability.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Schedule Strategy Call</a>
+                <a href="#approach" class="btn btn-secondary">Our Methodology</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="gradient-placeholder">
+                <div class="gradient-sphere"></div>
+            </div>
+        </div>
     </header>
-    <section class="hero">
-        <h1>Master the shift to AI-first search</h1>
-    </section>
-    <section class="partners trusted-partners">
-        <h2>Trusted Partners</h2>
-        <img src="logo1.png" alt="Logo 1">
-        <img src="logo2.png" alt="Logo 2">
-        <img src="logo3.png" alt="Logo 3">
-    </section>
-    <section class="pillars">
-        <h2>The Three Pillars</h2>
-        <div class="pillar">Semantic Authority</div>
-        <div class="pillar">Intent Alignment</div>
-        <div class="pillar">AI Discoverability</div>
-    </section>
-    <section class="strategic-partners" style="background-color: #004d00;">
-        <h2>Strategic Partners</h2>
-        <img src="partner1.png" alt="Partner 1">
-        <img src="partner2.png" alt="Partner 2">
-    </section>
-    <div class="email-capture">
-        <input type="email" placeholder="Your email address" required>
-        <input type="submit" value="Subscribe">
-    </div>
-    <footer>
-        <p>© 2026 Organik SEO. All rights reserved.</p>
+
+    <main>
+        <!-- Trusted Partners Section -->
+        <section class="trusted-partners">
+            <p class="section-label">Trusted by industry leaders</p>
+            <div class="partner-logos">
+                <div class="partner-logo">ACME</div>
+                <div class="partner-logo">GLOBAL</div>
+                <div class="partner-logo">VERTEX</div>
+                <div class="partner-logo">PRISM</div>
+                <div class="partner-logo">QUANTUM</div>
+            </div>
+        </section>
+
+        <!-- Three Pillars Section -->
+        <section id="approach" class="three-pillars">
+            <div class="pillars-container">
+                <div class="pillar-card">
+                    <div class="pillar-icon">ⓘ</div>
+                    <h3>Semantic Authority</h3>
+                    <p>Build deep topical expertise that AI systems recognize and trust.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">⭕</div>
+                    <h3>Intent Alignment</h3>
+                    <p>Match your content to what users actually need.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">⚡</div>
+                    <h3>AI Discoverability</h3>
+                    <p>Ensure your content is structured for AI comprehension.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Partners Section -->
+        <section id="partners" class="strategic-partners">
+            <div class="strategic-container">
+                <div class="strategic-content">
+                    <h2>Trusted strategic partners, <span class="results">proven results</span></h2>
+                    <ul class="benefits-list">
+                        <li><span class="bullet">→</span> Data-driven strategies backed by AI insights</li>
+                        <li><span class="bullet">→</span> Continuous optimization for emerging search patterns</li>
+                        <li><span class="bullet">→</span> Transparent reporting on semantic visibility metrics</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-accent">Discover Your Project</a>
+                </div>
+                <div class="strategic-visual">
+                    <div class="image-placeholder">
+                        <div class="placeholder-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Email CTA Section -->
+        <section id="contact" class="email-cta">
+            <div class="cta-container">
+                <h2>Ready to evolve?</h2>
+                <p>Get insights on AI-first search strategies delivered to your inbox.</p>
+                <form id="email-form" class="email-form">
+                    <input type="email" id="email-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-submit">Get Started</button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    <span class="success-icon">✓</span> Thanks! We'll be in touch soon.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-text">Organik <span class="logo-accent">SEO</span></span>
+                </div>
+                <p class="footer-tagline">AI-first search strategies for modern brands</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="mailto:julien@organikseo.com">julien@organikseo.com</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Organik SEO. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
