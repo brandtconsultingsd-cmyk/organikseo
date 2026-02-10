@@ -3,141 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organik SEO - Master AI-First Search</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Organik SEO - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #fff; }
+        nav { display: flex; gap: 20px; }
+        h1 { font-size: 2.5em; text-align: center; margin-top: 50px; }
+        .cta { background-color: #2e7d32; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
+        .hero { text-align: center; padding: 50px; background-color: #f0f0f0; }
+        .partners, .pillars { padding: 50px; text-align: center; }
+        .strategic-partners { background-color: #004d00; color: #fff; padding: 50px; }
+        footer { text-align: center; padding: 20px; background-color: #222; color: #fff; }
+        form { margin-top: 20px; }
+        input[type="email"] { padding: 10px; width: 300px; }
+        input[type="submit"] { padding: 10px; background-color: #2e7d32; color: #fff; border: none; }
+        @media (max-width: 600px) { h1 { font-size: 1.5em; } }
+    </style>
 </head>
 <body>
-    <!-- Navigation Header -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="back-link">← Back to Sites</a>
-            <div class="logo">
-                <span class="logo-text">Organik <span class="logo-accent">SEO</span></span>
-            </div>
-            <div class="nav-menu">
-                <a href="#approach">Approach</a>
-                <a href="#solutions">Solutions</a>
-                <a href="#partners">Partners</a>
-                <a href="#contact" class="cta-button">Strategy Call</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Master the shift to <span class="highlight">AI-first</span> search</h1>
-            <p class="hero-subtitle">Search is evolving beyond keywords. Success now demands semantic authority, intent alignment, and AI discoverability. We help brands adapt and thrive.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Schedule Strategy Call</a>
-                <a href="#approach" class="btn btn-secondary">Our Methodology</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="gradient-placeholder">
-                <div class="gradient-sphere"></div>
-            </div>
-        </div>
+    <header>
+        <div><a href="/">← Back to Sites</a></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="cta">Get Started</button>
+        </nav>
     </header>
-
-    <main>
-        <!-- Trusted Partners Section -->
-        <section class="trusted-partners">
-            <p class="section-label">Trusted by industry leaders</p>
-            <div class="partner-logos">
-                <div class="partner-logo">ACME</div>
-                <div class="partner-logo">GLOBAL</div>
-                <div class="partner-logo">VERTEX</div>
-                <div class="partner-logo">PRISM</div>
-                <div class="partner-logo">QUANTUM</div>
-            </div>
-        </section>
-
-        <!-- Three Pillars Section -->
-        <section id="approach" class="three-pillars">
-            <div class="pillars-container">
-                <div class="pillar-card">
-                    <div class="pillar-icon">ⓘ</div>
-                    <h3>Semantic Authority</h3>
-                    <p>Build deep topical expertise that AI systems recognize and trust. We help you create content that demonstrates true subject matter mastery.</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-icon">⭕</div>
-                    <h3>Intent Alignment</h3>
-                    <p>Match your content to what users actually need. We optimize for genuine problem-solving, not just keyword targeting.</p>
-                </div>
-                <div class="pillar-card">
-                    <div class="pillar-icon">⚡</div>
-                    <h3>AI Discoverability</h3>
-                    <p>Ensure your content is structured for AI comprehension. We optimize for both traditional search and AI-powered answer engines.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Strategic Partners Section -->
-        <section id="partners" class="strategic-partners">
-            <div class="strategic-container">
-                <div class="strategic-content">
-                    <h2>Trusted strategic partners, proven results</h2>
-                    <ul class="benefits-list">
-                        <li><span class="bullet">→</span> Data-driven strategies backed by AI insights</li>
-                        <li><span class="bullet">→</span> Continuous optimization for emerging search patterns</li>
-                        <li><span class="bullet">→</span> Transparent reporting on semantic visibility metrics</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-accent">Discover Your Project</a>
-                </div>
-                <div class="strategic-visual">
-                    <div class="image-placeholder">
-                        <div class="placeholder-grid"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Email CTA Section -->
-        <section id="contact" class="email-cta">
-            <div class="cta-container">
-                <h2>Ready to evolve?</h2>
-                <p>Get insights on AI-first search strategies delivered to your inbox.</p>
-                <form id="email-form" class="email-form">
-                    <input type="email" id="email-input" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-submit">Get Started</button>
-                </form>
-                <div id="success-message" class="success-message" style="display: none;">
-                    <span class="success-icon">✓</span> Thanks! We'll be in touch soon.
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-text">Organik <span class="logo-accent">SEO</span></span>
-                </div>
-                <p class="footer-tagline">AI-first search strategies for modern brands</p>
-            </div>
-            <div class="footer-links">
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <a href="mailto:julien@organikseo.com">julien@organikseo.com</a>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter">Twitter</a>
-                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
+    <section class="hero">
+        <h1>Master the shift to AI-first search</h1>
+    </section>
+    <section class="partners">
+        <h2>Trusted Partners</h2>
+        <p>[Insert Partner Logos Here]</p>
+    </section>
+    <section class="pillars">
+        <h2>Our Three Pillars</h2>
+        <div>
+            <h3>Semantic Authority</h3>
+            <p>Content that speaks to the needs of users.</p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 Organik SEO. All Rights Reserved.</p>
+        <div>
+            <h3>Intent Alignment</h3>
+            <p>Understanding what the user truly wants.</p>
         </div>
+        <div>
+            <h3>AI Discoverability</h3>
+            <p>Leveraging AI for enhanced visibility.</p>
+        </div>
+    </section>
+    <section class="strategic-partners">
+        <h2>Strategic Partners</h2>
+        <p>[Insert Strategic Partner Logos Here]</p>
+    </section>
+    <section class="email-capture">
+        <h2>Join Our Newsletter</h2>
+        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required />
+            <input type="submit" value="Subscribe" />
+        </form>
+    </section>
+    <footer>
+        <p>Contact: <a href="mailto:julien@organikseo.com">julien@organikseo.com</a></p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
