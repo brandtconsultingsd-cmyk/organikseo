@@ -1,3 +1,6 @@
+// Constants
+const SUCCESS_MESSAGE_DURATION = 5000;
+
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -21,10 +24,11 @@ if (emailForm) {
     emailForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const email = emailInput.value;
-        
-        // Simple email validation
-        if (email && email.includes('@')) {
+        // Browser validation handles email format via input type="email" and required attribute
+        // Only submit if form passes HTML5 validation
+        if (emailForm.checkValidity()) {
+            const email = emailInput.value;
+            
             // Hide form and show success message
             emailForm.style.display = 'none';
             successMessage.style.display = 'block';
@@ -32,12 +36,12 @@ if (emailForm) {
             // Log for development purposes
             console.log('Email submitted:', email);
             
-            // Optional: Reset form after 3 seconds
+            // Reset form after configured duration
             setTimeout(() => {
                 emailForm.reset();
                 emailForm.style.display = 'flex';
                 successMessage.style.display = 'none';
-            }, 5000);
+            }, SUCCESS_MESSAGE_DURATION);
         }
     });
 }
